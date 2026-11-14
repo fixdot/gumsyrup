@@ -2,7 +2,7 @@
 
 <img src="images/gumsyrup-title-en.png" alt="GumSyrup" width="992">
 
-## A small CLI tool for macOS Terminal that starts the next command input in English.
+## Start your next Terminal command in English
 
 GumSyrup is a macOS CLI tool that switches the current input source back to English before the next shell prompt appears.
 When you switch between input sources in Terminal, GumSyrup helps ensure that the next command starts in English automatically.
@@ -52,19 +52,19 @@ Other shells can also be used as long as they can run `gumsyrup` before displayi
 
 If you use Homebrew, install GumSyrup with:
 
-```Shell
+```shell
 brew install fixdot/tap/gumsyrup
 ```
 
 Update:
 
-```Shell
+```shell
 brew upgrade gumsyrup
 ```
 
 Uninstall:
 
-```Shell
+```shell
 brew uninstall gumsyrup
 ```
 
@@ -82,7 +82,7 @@ Example:
 
 The distributed binary is signed with a Developer ID and notarized by Apple.
 
-## zsh
+### zsh
 
 Add the following to `~/.zshrc`:
 
@@ -96,9 +96,13 @@ gumsyrup_precmd() {
 add-zsh-hook precmd gumsyrup_precmd
 ```
 
-bashAfter configuring it, reload your shell or open a new Terminal window.
+After adding the configuration, run the following command to apply it, or open a new Terminal window.
 
-## bash
+```shell
+source ~/.zshrc
+```
+
+### bash
 
 Add GumSyrup to `PROMPT_COMMAND` in `~/.bashrc` or `~/.bash_profile`.
 
@@ -108,7 +112,17 @@ Example:
 PROMPT_COMMAND="gumsyrup${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
 ```
 
-After configuring it, reload your shell or open a new Terminal window.
+After adding the configuration, run the command that matches the configuration file you use, or open a new Terminal window.
+
+```bash
+source ~/.bashrc
+```
+
+or:
+
+```bash
+source ~/.bash_profile
+```
 
 ## Usage
 
@@ -116,20 +130,20 @@ GumSyrup is normally called automatically from your shell.
 
 You can also run it manually:
 
-```Shell
+```shell
 gumsyrup
 ```
 
 Help:
 
-```Shell
+```shell
 gumsyrup -h
 gumsyrup --help
 ```
 
 Version:
 
-```Shell
+```shell
 gumsyrup -V
 gumsyrup --version
 ```
