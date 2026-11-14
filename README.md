@@ -90,7 +90,7 @@ Add the following to `~/.zshrc`:
 autoload -Uz add-zsh-hook
 
 gumsyrup_precmd() {
-    /usr/local/bin/gumsyrup
+    gumsyrup
 }
 
 add-zsh-hook precmd gumsyrup_precmd
@@ -105,7 +105,7 @@ Add GumSyrup to `PROMPT_COMMAND` in `~/.bashrc` or `~/.bash_profile`.
 Example:
 
 ```bash
-PROMPT_COMMAND="/usr/local/bin/gumsyrup${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
+PROMPT_COMMAND="gumsyrup${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
 ```
 
 After configuring it, reload your shell or open a new Terminal window.
