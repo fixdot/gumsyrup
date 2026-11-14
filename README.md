@@ -104,24 +104,16 @@ source ~/.zshrc
 
 ### bash
 
-Add GumSyrup to `PROMPT_COMMAND` in `~/.bashrc` or `~/.bash_profile`.
-
-Example:
+Add GumSyrup to `PROMPT_COMMAND` in `~/.bashrc`:
 
 ```bash
 PROMPT_COMMAND="gumsyrup${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
 ```
 
-After adding the configuration, run the command that matches the configuration file you use, or open a new Terminal window.
+After adding the configuration, run:
 
-```bash
+```shell
 source ~/.bashrc
-```
-
-or:
-
-```bash
-source ~/.bash_profile
 ```
 
 ## Usage
