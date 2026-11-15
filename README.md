@@ -102,6 +102,26 @@ After adding the configuration, run the following command to apply it, or open a
 source ~/.zshrc
 ```
 
+#### Temporarily Disabling and Re-enabling GumSyrup
+
+GumSyrup runs before each zsh prompt is displayed. It has little impact during normal use, but rapidly pressing Return may occasionally cause the prompt display to become distorted.
+
+You can temporarily disable GumSyrup's automatic execution for the current zsh session.
+
+**Disable:**
+
+```zsh
+add-zsh-hook -d precmd gumsyrup_precmd
+```
+
+**Re-enable:**
+
+```zsh
+add-zsh-hook precmd gumsyrup_precmd
+```
+
+These commands affect only the current zsh session and do not modify `~/.zshrc`. GumSyrup will be enabled as usual in new sessions.
+
 ### bash
 
 Add GumSyrup to `PROMPT_COMMAND` in `~/.bashrc`:
