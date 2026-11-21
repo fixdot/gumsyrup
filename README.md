@@ -1,6 +1,6 @@
 # GumSyrup
 
-<img src="images/gumsyrup-title-en.png" alt="GumSyrup" width="992">
+<img src="media/gumsyrup-title-en.png" alt="GumSyrup" width="992">
 
 ## Start your next Terminal command in English
 
@@ -184,7 +184,7 @@ If you find a bug or have a feature request, please report it through [GitHub Is
 
 GumSyrup is released under the MIT License.
 
-Copyright (c) 2026 fix
+Copyright © 2026 fix
 
 ## Project
 
