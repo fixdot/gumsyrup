@@ -1,9 +1,8 @@
 # GumSyrup
-
+## Start your next Terminal command in English
 <img src="media/gumsyrup-title-en.png" alt="GumSyrup" width="992">
 
-## Start your next Terminal command in English
-
+## Overview
 GumSyrup is a macOS CLI tool that switches the current input source back to English before the next shell prompt appears.
 When you switch between input sources in Terminal, GumSyrup helps ensure that the next command starts in English automatically.
 
@@ -186,6 +185,6 @@ GumSyrup is released under the MIT License.
 
 Copyright © 2026 fix
 
-## Project
+## Repository
 
 GitHub: https://github.com/fixdot/gumsyrup
